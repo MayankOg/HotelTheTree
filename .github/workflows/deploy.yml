@@ -32,4 +32,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          publish_dir: ./dist  # Change 'build' to 'dist' for Vite projects
+          publish_branch: gh-pages
+          force_orphan: true  # Create the gh-pages branch if it doesn't exist
