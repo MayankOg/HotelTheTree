@@ -35,3 +35,10 @@
     "vite": "^6.0.5"
   }
 }
+{
+  "homepage": "https://hotelthetree.com",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}
