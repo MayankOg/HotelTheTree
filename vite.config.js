@@ -1,12 +1,13 @@
-import { defineConfig } from 'vite'
-import tailwindcss from 'tailwindcss'
-import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
+import react from '@vitejs/plugin-react'
+// https://vite.dev/config/
 export default defineConfig({
-  base: '/HotelTheTree/', // Updated with correct repo name
-  plugins: [
-    react(),
-    tailwindcss(),
+    base: '/HotelTheTree/', // Updated with correct repo name
+
+  plugins: [react(),
+  tailwindcss(),
   ],
 })
+
