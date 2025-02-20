@@ -23,11 +23,8 @@ jobs:
 
       - name: Install Tailwind CSS with Vite
         run: |
-          npm install -D tailwindcss postcss autoprefixer
-          npx tailwindcss init -p
-          echo "@tailwind base;\n@tailwind components;\n@tailwind utilities;" > src/index.css
-          echo "module.exports = { content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'], theme: { extend: {}, }, plugins: [], };" > tailwind.config.js
-
+          npm install tailwindcss @tailwindcss/vite
+          
       - name: Build project
         run: npm run build
 
